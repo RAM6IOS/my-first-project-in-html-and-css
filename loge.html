@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+  
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+    <title>Document</title>
+
+    <style>
+        *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+        .navbar{
+            border: 1px solid ;
+            border-bottom: 5px solid orangered;
+            width: 200%;
+            height: 100px;
+           background-color:black;
+        }
+        .lgo{
+            background: linear-gradient(40deg,orangered,white);;
+            border: 1px solid black;
+            border-radius: 15px;
+            height: 60px;
+            width: 80px;
+            margin-left:40px ;
+            margin-top: 20px;
+            transform: rotate(0deg);
+            animation: roll 2s infinite;
+
+        }
+        @keyframes roll {
+            100%{
+                Background: linear-gradient(40deg,orangered,white);
+                
+
+            }
+            20%{
+                background: linear-gradient(40deg,green,white);;
+            }
+            40%{
+                background:linear-gradient(40deg,yellow,white)
+            }
+
+        }
+        .fab{
+            position: relative;
+            left: 20px;
+            top: 10px;
+          transform: rotate(0deg);
+          animation: spen 1s infinite ;
+
+        }
+        @keyframes spen{
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        button{
+            
+            margin-left: 00px;
+            position: relative;
+            bottom: 50px;
+            border-radius: 10px;
+            width: 80px;
+            height: 40px;
+            background:linear-gradient(45deg,orangered,white);
+            
+
+        }
+        .button1{
+            position: relative;
+            left: 200px;
+            font-size:18px
+        }
+        .button2{
+           position: relative;
+           left: 250px;
+           font-size:18px
+        }
+        .button3{
+            position: relative;
+            left: 300px;
+            font-size:18px
+           
+        }
+        
+        
+
+
+#myinput {
+  background: linear-gradient(to right, #849714 0%, #bd0d1c 50%, #fff 50%, #fff 100%);
+  border: solid 1px #9782d0;
+  border-radius: 8px;
+  height: 12px;
+  width: 356px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+       
+    </style>
+    <div class="navbar">
+        <div class="lgo"><i class='fab fa-empire' style='font-size:40px'></i></div>
+        <div><button class="button1"><i class='fas fa-book-reader' ></i>learn</button>
+            
+        <button class="button2"><i class='fas fa-play' ></i>video</button>
+    <button class="button3"><i class='fas fa-chalkboard' ></i>nwes</button></div>
+    </div>
+    <dl></dl>
+    
+    <div class="chrome">
+        <input id="myinput" type="range" value="50"  min="10" max="100"/>
+      </div>
+    
+    
+        
+    
+</head>
+<body>
+    
+</body>
+<script>
+    
+    document.getElementById("myinput").oninput = function() {
+  this.style.background = 'linear-gradient(to right, #849714 0%, #bd0d1c ' + this.value + '%, #fff ' + this.value + '%, white 100%)'
+};
+</script>
+</html>
