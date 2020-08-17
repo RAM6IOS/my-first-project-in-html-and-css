@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
-  
+
+
+
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    
+
     <title>Document</title>
 
     <style>
@@ -37,12 +37,12 @@
         }
         @keyframes roll {
             100%{
-                Background: linear-gradient(40deg,orangered,white);
-                
+                Background: linear-gradient(40deg,rgb(228, 86, 34),white);
+
 
             }
             20%{
-                background: linear-gradient(40deg,green,white);;
+                background: linear-gradient(40deg,rgb(34, 223, 34),white);;
             }
             40%{
                 background:linear-gradient(40deg,yellow,white)
@@ -63,7 +63,7 @@
             }
         }
         button{
-            
+
             margin-left: 00px;
             position: relative;
             bottom: 50px;
@@ -71,7 +71,7 @@
             width: 80px;
             height: 40px;
             background:linear-gradient(45deg,orangered,white);
-            
+
 
         }
         .button1{
@@ -88,10 +88,10 @@
             position: relative;
             left: 300px;
             font-size:18px
-           
+
         }
-        
-        
+
+
 
 
 #myinput {
@@ -104,30 +104,30 @@
   transition: background 450ms ease-in;
   -webkit-appearance: none;
 }
-       
+
     </style>
     <div class="navbar">
         <div class="lgo"><i class='fab fa-empire' style='font-size:40px'></i></div>
         <div><button class="button1"><i class='fas fa-book-reader' ></i>learn</button>
-            
+
         <button class="button2"><i class='fas fa-play' ></i>video</button>
     <button class="button3"><i class='fas fa-chalkboard' ></i>nwes</button></div>
     </div>
     <dl></dl>
-    
+
     <div class="chrome">
         <input id="myinput" type="range" value="50"  min="10" max="100"/>
       </div>
-    
-    
-        
-    
+
+
+
+
 </head>
 <body>
-    
+
 </body>
 <script>
-    
+
     document.getElementById("myinput").oninput = function() {
   this.style.background = 'linear-gradient(to right, #849714 0%, #bd0d1c ' + this.value + '%, #fff ' + this.value + '%, white 100%)'
 };
